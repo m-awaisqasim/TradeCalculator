@@ -55,7 +55,7 @@
         <div>
           <label class="text-[11px] text-slate-400 uppercase font-semibold block mb-1">Symbol</label>
           <div class="input-group rounded-lg flex items-center px-2">
-            <input id="symbol" type="text" class="w-full bg-transparent py-1.5 text-xs font-mono font-bold focus:outline-none uppercase" value="BTCUSDT">
+            <input id="symbol" type="text" class="w-full bg-transparent py-1.5 text-xs font-mono font-bold focus:outline-none uppercase" value="BTC">
           </div>
         </div>
         <div>
@@ -77,7 +77,7 @@
 
         <div id="riskInputGroup" class="input-group rounded-xl flex items-center px-3 border-l-4 border-l-blue-500">
           <span class="text-slate-400 mr-2 text-xs"><i class="fas fa-shield-alt"></i></span>
-          <input id="riskPercent" type="number" class="w-full bg-transparent py-2.5 text-sm font-mono focus:outline-none" value="1">
+          <input id="riskPercent" type="number" class="w-full bg-transparent py-2.5 text-sm font-mono focus:outline-none" value="0.4">
           <span class="text-slate-400 text-xs font-bold">% Account Risk</span>
         </div>
 
@@ -93,7 +93,7 @@
         <!-- Entry System -->
         <div>
           <div class="flex justify-between items-center mb-1">
-            <label class="text-[11px] text-slate-400 uppercase font-bold">Entry Strategy</label>
+            <label class="text-[11px] text-slate-400 uppercase font-bold">Entry Price</label>
             <div class="flex items-center gap-2">
               <span id="avgEntryDisplay" class="text-[11px] font-mono text-blue-400 bg-blue-950/40 px-1.5 py-0.5 rounded border border-blue-900/30 hidden">Avg: --</span>
               <button onclick="addEntryRow()" class="text-[11px] font-bold text-emerald-400 hover:text-emerald-300"><i class="fas fa-plus"></i> Add Scale</button>
@@ -121,7 +121,7 @@
 
           <div>
             <div class="flex justify-between items-center mb-1">
-              <label class="text-[11px] text-slate-400 uppercase font-bold">Take Profit Plan</label>
+              <label class="text-[11px] text-slate-400 uppercase font-bold">Take Profit</label>
               <button onclick="addTpRow()" class="text-[11px] font-bold text-emerald-400 hover:text-emerald-300"><i class="fas fa-plus"></i> Add target</button>
             </div>
             <div id="tpRowsContainer" class="space-y-1.5">
